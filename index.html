@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="南京工业职业技术大学新生百科全书，按主题整理报到、宿舍、学习、校园生活与独立生活常见问题。"
+    />
+    <meta name="theme-color" content="#f4f0e8" />
+    <title>新生百科全书 | 南京工业职业技术大学</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23dc6442'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='white' font-family='sans-serif'%3EN%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="gate-locked">
+    <section class="countdown-gate" id="countdownGate" aria-labelledby="countdownTitle">
+      <div class="gate-grid-overlay" aria-hidden="true"></div>
+      <div class="gate-orbit gate-orbit-one" aria-hidden="true"></div>
+      <div class="gate-orbit gate-orbit-two" aria-hidden="true"></div>
+
+      <div class="gate-shell">
+        <header class="gate-brand-row">
+          <a class="brand brand-inverse" href="#countdownGate" aria-label="新生百科全书倒计时页">
+            <span class="brand-seal" aria-hidden="true">新</span>
+            <span class="brand-copy">
+              <strong>新生百科</strong>
+              <small>NIIT GUIDE · 2027</small>
+            </span>
+          </a>
+          <span class="gate-edition">南京工业职业技术大学</span>
+        </header>
+
+        <div class="gate-content">
+          <div class="gate-copy">
+            <p class="gate-eyebrow">NEW SEMESTER COUNTDOWN</p>
+            <h1 id="countdownTitle">
+              距离新生开学
+              <span>还有</span>
+            </h1>
+
+            <div class="countdown" role="timer" aria-label="距离2027年9月1日开学时间">
+              <div class="countdown-unit">
+                <strong id="countdownDays">---</strong>
+                <span>天</span>
+              </div>
+              <i aria-hidden="true">:</i>
+              <div class="countdown-unit">
+                <strong id="countdownHours">--</strong>
+                <span>时</span>
+              </div>
+              <i aria-hidden="true">:</i>
+              <div class="countdown-unit">
+                <strong id="countdownMinutes">--</strong>
+                <span>分</span>
+              </div>
+              <i aria-hidden="true">:</i>
+              <div class="countdown-unit">
+                <strong id="countdownSeconds">--</strong>
+                <span>秒</span>
+              </div>
+            </div>
+
+            <p class="countdown-date" id="countdownDate">2027年9月1日 00:00</p>
+
+            <button class="enter-button" id="enterSite" type="button">
+              <span>点击进入</span>
+              <span class="enter-arrow" aria-hidden="true">→</span>
+            </button>
+
+            <p class="gate-note">开学时间为暂定日期，最终安排以学校通知为准。</p>
+          </div>
+
+          <div class="gate-poster" aria-hidden="true">
+            <span class="poster-label">NANJING · XIANLIN</span>
+            <strong>2027</strong>
+            <span class="poster-line"></span>
+            <p>新生<br />第一站</p>
+            <span class="poster-stamp">NJUIT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="site-stage" id="siteStage" aria-hidden="true" inert>
+      <a class="skip-link" href="#guide">跳到问答内容</a>
+
+      <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="返回新生百科全书首页">
+          <span class="brand-seal" aria-hidden="true">新</span>
+          <span class="brand-copy">
+            <strong>新生百科</strong>
+            <small>NIIT GUIDE</small>
+          </span>
+        </a>
+
+        <nav class="header-nav" aria-label="页面导航">
+          <a href="#directory">目录</a>
+          <a href="#cycle">年度共建</a>
+          <a href="#campus-map">校园地图</a>
+          <a href="#guide">全部问答</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="admin-trigger" id="adminOpen" type="button" aria-label="创建者管理">
+            <span class="admin-status-dot" aria-hidden="true"></span>
+            <span id="adminTriggerLabel">创建者管理</span>
+          </button>
+          <button class="search-trigger" id="searchOpen" type="button">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span>搜索问答</span>
+            <kbd>⌘ K</kbd>
+          </button>
+        </div>
+      </div>
+      </header>
+
+      <main>
+      <section class="hero" id="home">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">南京工业职业技术大学 · 新生入学手册</p>
+            <h1 class="hero-title">
+              新生
+              <span>百科全书</span>
+            </h1>
+            <p class="hero-lead">
+              一份由新生提出问题、创建者首发解答、学长学姐持续补充、每年重新校订的校园知识手册。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#guide">
+                开始查阅
+                <span aria-hidden="true">↓</span>
+              </a>
+              <button class="button button-quiet" id="heroSearch" type="button">
+                搜索关键词
+              </button>
+            </div>
+
+            <dl class="hero-facts" aria-label="内容统计">
+              <div>
+                <dt>主题目录</dt>
+                <dd id="topicCount">06</dd>
+              </div>
+              <div>
+                <dt>实录问答</dt>
+                <dd id="questionCount">30</dd>
+              </div>
+              <div>
+                <dt>更新机制</dt>
+                <dd>年度<span>迭代</span></dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="directory-panel" id="directory" aria-labelledby="directoryTitle">
+            <div class="directory-heading">
+              <div>
+                <p class="overline">CONTENTS</p>
+                <h2 id="directoryTitle">目录</h2>
+              </div>
+              <span class="directory-hint">点击前往</span>
+            </div>
+
+            <nav class="directory-list" id="directoryList" aria-label="新生百科目录"></nav>
+
+            <p class="directory-note">
+              每个问题先发布基础答案，高年级补充经筛选后公开。每年结合新生反馈与学校新规重新校订。
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="map-section" id="campus-map" aria-labelledby="mapTitle">
+        <div class="container">
+          <header class="map-heading">
+            <div>
+              <p class="eyebrow">CAMPUS MAP · XIANLIN</p>
+              <h2 id="mapTitle">仙林校区平面地图</h2>
+              <p>
+                从西门、南门和北门进入校园，沿着松山湖辨认宿舍、教学楼、图书馆与运动区。
+              </p>
+            </div>
+            <a
+              class="map-official-link"
+              href="https://www.niit.edu.cn/map/list.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              学校官网地图
+              <span aria-hidden="true">↗</span>
+            </a>
+          </header>
+
+          <figure class="map-figure">
+            <a
+              class="map-image-link"
+              href="assets/xiantlin-campus-map.webp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="查看南京工业职业技术大学仙林校区平面地图大图"
+            >
+              <img
+                src="assets/xiantlin-campus-map.webp"
+                width="2471"
+                height="1732"
+                loading="lazy"
+                alt="南京工业职业技术大学仙林校区手绘平面地图，标注西门、南门、北门、宿舍区、教学楼、图书馆、松山湖和运动场。"
+              />
+              <span class="map-zoom-label">点击查看大图 ↗</span>
+            </a>
+            <figcaption>
+              <span>仙林校区 · 南京市栖霞区羊山北路1号</span>
+              <span>地图来源：南京工业职业技术大学官网</span>
+            </figcaption>
+          </figure>
+
+          <div class="map-details" aria-label="仙林校区交通信息">
+            <article>
+              <span class="map-detail-index">01</span>
+              <h3>地铁换乘</h3>
+              <p>地铁2号线至羊山公园站，从1号出口换乘公交321路。</p>
+            </article>
+            <article>
+              <span class="map-detail-index">02</span>
+              <h3>西门 · 宿舍区</h3>
+              <p>321、310、320、107、165、331路公交可达。</p>
+            </article>
+            <article>
+              <span class="map-detail-index">03</span>
+              <h3>南门 · 行政办公区</h3>
+              <p>50、146、325路公交至羊山北路西或羊山北路总站。</p>
+            </article>
+            <article>
+              <span class="map-detail-index">04</span>
+              <h3>北门 · 工业中心与运动区</h3>
+              <p>107、165、310、331、321路公交可达。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cycle-section" id="cycle" aria-labelledby="cycleTitle">
+        <div class="container">
+          <header class="cycle-heading">
+            <div>
+              <p class="eyebrow">ANNUAL KNOWLEDGE LOOP</p>
+              <h2 id="cycleTitle">不是一次整理，<br />而是每年更新</h2>
+            </div>
+            <p>
+              新生的问题会变化，学校的安排也会变化。网站按照“提出问题—首发解答—经验补充—审核沉淀—年度迭代”的流程运行，让答案一届一届变得更完整、更准确。
+            </p>
+          </header>
+
+          <ol class="cycle-list" aria-label="新生百科年度共建流程">
+            <li>
+              <span class="cycle-number">01</span>
+              <div>
+                <strong>问题征集</strong>
+                <p>从报到、课堂、宿舍、社团与事务办理等真实场景中收集问题，去重后归入主题目录。</p>
+              </div>
+            </li>
+            <li>
+              <span class="cycle-number">02</span>
+              <div>
+                <strong>首发解答</strong>
+                <p>创建者先核对官网、入学须知和官方通知，为每个问题整理一份可直接使用的基线答案。</p>
+              </div>
+            </li>
+            <li>
+              <span class="cycle-number">03</span>
+              <div>
+                <strong>学长补充</strong>
+                <p>开放补充回答区，邀请高年级同学补充真实经验、不同情况和容易忽略的操作细节。</p>
+              </div>
+            </li>
+            <li>
+              <span class="cycle-number">04</span>
+              <div>
+                <strong>审核沉淀</strong>
+                <p>只保留有用且符合规范的内容；修订不完整答案，删除广告、隐私、攻击、过期与不实信息。</p>
+              </div>
+            </li>
+            <li>
+              <span class="cycle-number">05</span>
+              <div>
+                <strong>年度迭代</strong>
+                <p>每年结合新一届新生反馈和学校最新政策复核内容，归档旧版本并发布新一版知识库。</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="cycle-standard">
+            <span>内容保留标准</span>
+            <p>
+              能解决具体问题 · 有事实依据 · 不泄露个人隐私 · 不包含广告与攻击 · 明确适用时间和校区
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide" id="guide">
+        <div class="container">
+          <header class="guide-heading">
+            <p class="eyebrow">QUESTION INDEX</p>
+            <h2>按主题，找到你要的答案</h2>
+            <p>
+              每个主题下方是一条条小标题。创建者先给出基础解答，高年级同学可以继续补充，经审核后公开展示。
+            </p>
+          </header>
+
+          <div id="sectionsRoot" class="sections"></div>
+
+          <div class="reading-note">
+            <span class="reading-note-label">阅读提示</span>
+            <p>
+              涉及报到时间、校区安排、住宿规定、缴费与请假的细节，以录取通知书、新生入学须知、学校官网和辅导员通知为准。
+            </p>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>新生百科全书</strong>
+          <p>南京工业职业技术大学新生信息导航</p>
+        </div>
+        <p class="footer-source">
+          资料来源：《南京工业职业技术大学大一新生常见问题与回答》修改版
+        </p>
+      </div>
+      </footer>
+
+      <button class="to-top" id="toTop" type="button" aria-label="返回页面顶部">
+        ↑
+      </button>
+    </div>
+
+    <dialog class="search-dialog" id="searchDialog" aria-labelledby="searchTitle">
+      <div class="search-shell">
+        <div class="search-dialog-head">
+          <div>
+            <p class="overline">SEARCH</p>
+            <h2 id="searchTitle">搜索问答</h2>
+          </div>
+          <button class="icon-button" id="searchClose" type="button" aria-label="关闭搜索">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <label class="search-field" for="searchInput">
+          <span class="search-icon" aria-hidden="true"></span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="输入问题或关键词，例如：宿舍、选课、校园网"
+            autocomplete="off"
+          />
+        </label>
+
+        <p class="search-status" id="searchStatus" aria-live="polite">
+          输入关键词，检索全部问答。
+        </p>
+        <div class="search-results" id="searchResults"></div>
+        <p class="search-footnote">按 Esc 关闭搜索窗口</p>
+      </div>
+    </dialog>
+
+    <dialog class="mini-dialog" id="adminDialog" aria-labelledby="adminTitle">
+      <div class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p class="overline">CREATOR ACCESS</p>
+            <h2 id="adminTitle">创建者管理</h2>
+          </div>
+          <button class="icon-button" id="adminClose" type="button" aria-label="关闭管理窗口">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <section id="adminLoginPanel">
+          <p class="dialog-description">
+            登录后可以审核、编辑、撤回或删除补充回答。新提交内容默认进入待审核状态，不会直接公开。
+          </p>
+          <form class="dialog-form" id="adminLoginForm">
+            <label class="field-label" for="adminPassword">管理密码</label>
+            <input
+              class="text-input"
+              id="adminPassword"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            />
+            <p class="form-status" id="adminStatus" role="alert"></p>
+            <button class="button button-primary dialog-submit" type="submit">
+              登录管理模式
+            </button>
+          </form>
+        </section>
+
+        <section id="adminSessionPanel" hidden>
+          <p class="dialog-description">
+            当前已进入管理模式。问题下方会显示待审核与已公开回答，可执行通过、撤回、编辑和删除操作。
+          </p>
+          <button class="button button-quiet dialog-submit" id="adminLogout" type="button">
+            退出管理模式
+          </button>
+        </section>
+      </div>
+    </dialog>
+
+    <dialog class="mini-dialog" id="editAnswerDialog" aria-labelledby="editAnswerTitle">
+      <div class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p class="overline">EDIT ANSWER</p>
+            <h2 id="editAnswerTitle">编辑回答</h2>
+          </div>
+          <button class="icon-button" id="editAnswerClose" type="button" aria-label="关闭编辑窗口">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <form class="dialog-form" id="editAnswerForm">
+          <label class="field-label" for="editAnswerContent">回答内容</label>
+          <textarea
+            class="text-area"
+            id="editAnswerContent"
+            name="content"
+            rows="7"
+            maxlength="1000"
+            required
+          ></textarea>
+          <p class="form-status" id="editAnswerStatus" role="alert"></p>
+          <div class="dialog-actions">
+            <button class="button button-quiet" id="editAnswerCancel" type="button">
+              取消
+            </button>
+            <button class="button button-primary" type="submit">保存修改</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <noscript>
+      <div class="noscript-note">请启用 JavaScript 后查看导航和问答内容。</div>
+    </noscript>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
